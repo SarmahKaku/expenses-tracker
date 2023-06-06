@@ -1,0 +1,44 @@
+@import '../../../variables.scss';
+
+header {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid #e5e5e5;
+      padding-bottom: 1em;
+
+      .sitenamemain {
+            a {
+                  display: inline-block;
+
+                  img {
+                        height: 22px;
+                        vertical-align: middle;
+                  }
+
+                  p {
+                        display: inline-block;
+                        margin: 0px 0px 0px 8px;
+                        font-size: 24px;
+                        font-weight: 600;
+                        vertical-align: middle;
+                        color: $primarySiteDarkColor;
+                  }
+            }
+      }
+
+      .header-navi {
+            ul {
+                  margin: 0px;
+
+                  li {
+                        display: inline-block;
+                        padding: 0px 1em;
+
+                        a {
+                              text-decoration: none;
+                              color: $primarySiteDarkColor ;
+                        }
+                  }
+            }
+      }
+}

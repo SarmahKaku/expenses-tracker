@@ -1,0 +1,26 @@
+<div class="expenses-entry-main">
+      <div class="expenses-entry-form-main">
+            <div class="conwithshadows expenses-entry-form">
+                  <h2>Expenses Entry</h2>
+                  <form (ngSubmit)="handleFormSubmit(f.value)" #f="ngForm">
+                        <label for="">Item</label>
+                        <input type="text" name="itemname" ngModel>
+                        <label for="">Price</label>
+                        <input type="number" name="itemprice" ngModel>
+                        <label for="">Catagory</label>
+                        <label [for]="catagory" *ngFor="let catagory of catagories" class="catagory-items">{{catagory}}
+                              <input type="radio" [id]="catagory" name="itemcatagory" [value]="catagory" ngModel>
+                              <span></span>
+                        </label>
+                        <label for="">Description</label>
+                        <textarea name="itemdesc" id="" cols="30" rows="10" ngModel></textarea>
+
+
+                        <button type="submit">Add item</button>
+                        <button type="button">Cancel</button>
+                  </form>
+            </div>
+
+      </div>
+
+</div>

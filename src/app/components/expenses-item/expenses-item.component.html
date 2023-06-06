@@ -1,0 +1,23 @@
+
+<div class="conwithshadows" *ngIf="expensesData && expensesData.length == 0">
+      <p>No Expenses to display!</p>
+</div>
+<div class="conwithshadows item-details-main" *ngFor="let expenseItem of expensesData">
+      <div class="item-date">
+            <app-item-date [itemDate]="expenseItem.date"></app-item-date>
+      </div>
+      <div class="item-details">
+            <h2>{{expenseItem.itemname}}</h2>
+            <p>{{expenseItem.itemdesc}}</p>
+      </div>
+      <div class="item-price">
+            Rs : {{expenseItem.itemprice}}
+      </div>
+</div>
+
+<div class="conwithshadows totalExpense">TOTAL is Rs. {{totalExpense}}</div>
+
+
+
+
+

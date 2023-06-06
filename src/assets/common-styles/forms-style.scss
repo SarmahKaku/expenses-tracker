@@ -1,0 +1,41 @@
+@import '../../variables.scss';
+
+form {
+
+  label {
+    color: $primarySiteDarkColor;
+    display: block;
+    margin: 5px 0px;
+  }
+
+  input,
+  textarea {
+    padding: 10px 15px;
+    border: 1px solid $formInputBorderColor;
+    border-radius: 0.3em;
+    color: $formInputTextColor;
+    margin-bottom: 1.1em;
+    width: calc(100% - 30px);
+    background-color: transparent;
+  }
+
+  textarea {
+    height: 3em;
+  }
+
+  button[type=submit]{
+    background-color: $primarySiteDarkColor;
+    color: $white;
+  }
+  button{
+    padding: 10px 15px;
+    border-radius: 0.3em;
+    margin: 1.3em 1em 1.3em 0em;
+    border: 1px solid $formInputBorderColor;
+  }
+  button[type=button]{
+    background-color: $white;
+    color:$primarySiteDarkColor;
+  }
+
+}

@@ -1,0 +1,14 @@
+.item-date-main {
+      text-align: center;
+      .item-month {
+            font-size: 1.5rem;
+            margin: 0px 0px 6px;
+      }
+      .item-date {
+            margin-top: 6px;
+            span {
+                  font-size: 0.7rem;
+                  font-weight: 100;
+            }
+      }
+}

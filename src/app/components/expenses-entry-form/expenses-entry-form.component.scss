@@ -1,0 +1,41 @@
+@import '../../../assets/common-styles/forms-style.scss';
+
+
+.expenses-entry-main {
+      display: flex;
+      justify-content: flex-start;
+
+      .expenses-entry-form-main {
+            width: 50%;
+
+            .catagory-items {
+                  display: inline-block;
+                  border: 1px solid $primarySiteDarkColor;
+                  position: relative;
+                  padding: 10px 10px 10px 10px;
+                  border-radius: 1rem;
+                  margin: 5px 10px 5px 0px;
+                  cursor: pointer;
+                  z-index: 999;
+
+                  input {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 0;
+                        height: 0;
+                        opacity: 0;
+                  }
+                  input:checked+span {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        border-radius: 0.9rem;
+                        bottom: 0;
+                        right: 0;
+                        border: 5px solid $primarySiteDarkColor;
+
+                  }
+            }
+      }
+}

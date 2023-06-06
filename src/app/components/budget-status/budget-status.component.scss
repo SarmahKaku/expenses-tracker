@@ -1,0 +1,72 @@
+@import '../../../variables.scss';
+
+.budge-status-main {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+      gap: 1.3rem;
+
+      .budget-item {
+            text-align: center;
+            padding-right: 1rem;
+
+            h2 {
+                  margin: 0 0 0.5rem 0;
+                  font-size: 1.7rem;
+            }
+
+            span {
+                  color: $primarySiteDarkColor;
+                  font-size: 1.3rem;
+            }
+      }
+
+      .item-income {
+            border-left: 5px solid $success;
+
+            h2 {
+                  color: $success
+            }
+      }
+
+      .item-expenses {
+            border-left: 5px solid $warning;
+
+            h2 {
+                  color: $warning
+            }
+      }
+
+      .item-year,
+      .item-month {
+            border-left: 5px solid $primarySiteDarkColor;
+
+            h2 {
+                  color: $primarySiteDarkColor
+            }
+      }
+
+      .filters {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+
+            .filters-item {
+                  width: 25px;
+                  height: 25px;
+                  background-repeat: no-repeat;
+                  background-position: center;
+                  background-size: 25px;
+                  cursor: pointer;
+            }
+
+            .filter {
+                  background-image: url('../../../assets/icons/tune_black_18dp.svg');
+            }
+
+            .search {
+                  background-image: url('../../../assets/icons/search_black_18dp.svg');
+            }
+      }
+
+}
